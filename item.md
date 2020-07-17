@@ -35,19 +35,19 @@ Authentication token to track down who is emptying our stocks.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="buydate" type="string" required=false %}
-
+ 입력 데이터가 없을 시 null 
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="price" type="number" required=false %}
-
+ 입력데이터가 없을 시 null 
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="brand" type="string" required=false %}
-
+ 입력 데이터가 없을 시 null  
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="storage" type="string" required=false %}
-
+ 입력 데이터가 없을 시 null  
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
@@ -82,7 +82,7 @@ Update Item
 {% endapi-method-summary %}
 
 {% api-method-description %}
- 이 엔드포인트에서는 아이템을 수정합니다.  
+ 이 엔드포인트에서는 아이템을 수정합니다.  변경하고자 하는 데이터 정보만...? 
 {% endapi-method-description %}
 
 {% api-method-spec %}
