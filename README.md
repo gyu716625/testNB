@@ -29,7 +29,7 @@ SignUp
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
 {% api-method-response-example-description %}
-Cake successfully retrieved.
+ 회원가입 성공
 {% endapi-method-response-example-description %}
 
 ```
@@ -39,7 +39,7 @@ Cake successfully retrieved.
 
 {% api-method-response-example httpCode=404 %}
 {% api-method-response-example-description %}
-Could not find a cake matching this query.
+ 회원가입 실패
 {% endapi-method-response-example-description %}
 
 ```
@@ -49,7 +49,7 @@ Could not find a cake matching this query.
 
 {% api-method-response-example httpCode=409 %}
 {% api-method-response-example-description %}
-
+ 이미 존재하는 이메일을 입력
 {% endapi-method-response-example-description %}
 
 ```
@@ -85,7 +85,7 @@ SignIn
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
 {% api-method-response-example-description %}
-
+ 로그인 성공
 {% endapi-method-response-example-description %}
 
 ```
@@ -95,7 +95,7 @@ SignIn
 
 {% api-method-response-example httpCode=404 %}
 {% api-method-response-example-description %}
-
+ 로그인 실패 
 {% endapi-method-response-example-description %}
 
 ```
@@ -137,7 +137,7 @@ Change Password
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
 {% api-method-response-example-description %}
-
+ 패스워드 변경 성공  
 {% endapi-method-response-example-description %}
 
 ```
@@ -147,7 +147,7 @@ Change Password
 
 {% api-method-response-example httpCode=404 %}
 {% api-method-response-example-description %}
-
+ 패스워드 변경 실패  
 {% endapi-method-response-example-description %}
 
 ```
@@ -157,7 +157,7 @@ Change Password
 
 {% api-method-response-example httpCode=409 %}
 {% api-method-response-example-description %}
-
+ 일치하지 않는 패스워드를 입력 
 {% endapi-method-response-example-description %}
 
 ```
