@@ -55,7 +55,7 @@ Authentication token to track down who is emptying our stocks.
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
 {% api-method-response-example-description %}
-Cake successfully retrieved.
+ 아이템 등록 성공   
 {% endapi-method-response-example-description %}
 
 ```
@@ -65,7 +65,7 @@ Cake successfully retrieved.
 
 {% api-method-response-example httpCode=404 %}
 {% api-method-response-example-description %}
-Could not find a cake matching this query.
+ 아이템 등록 실패      
 {% endapi-method-response-example-description %}
 
 ```
@@ -133,7 +133,7 @@ Update Item
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
 {% api-method-response-example-description %}
-
+ 아이템 수정 성공   
 {% endapi-method-response-example-description %}
 
 ```
@@ -143,7 +143,7 @@ Update Item
 
 {% api-method-response-example httpCode=404 %}
 {% api-method-response-example-description %}
-
+ 아이템 수정 실패
 {% endapi-method-response-example-description %}
 
 ```
@@ -181,7 +181,7 @@ Delete Item
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
 {% api-method-response-example-description %}
-
+ 아이템 삭제 성공
 {% endapi-method-response-example-description %}
 
 ```
@@ -191,7 +191,7 @@ Delete Item
 
 {% api-method-response-example httpCode=404 %}
 {% api-method-response-example-description %}
-
+ 아이템 삭제 실패 
 {% endapi-method-response-example-description %}
 
 ```
