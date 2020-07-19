@@ -106,7 +106,7 @@ SignIn
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="post" host="{baseUrl}" path="/user/newpassword" %}
+{% api-method method="post" host="{baseUrl}" path="/user/newpwd" %}
 {% api-method-summary %}
 Change Password
 {% endapi-method-summary %}
