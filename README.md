@@ -168,7 +168,7 @@ Change Password
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="post" host="{baseUrl}" path="/user/signout" %}
+{% api-method method="get" host="{baseUrl}" path="/user/signout" %}
 {% api-method-summary %}
 Signout
 {% endapi-method-summary %}
