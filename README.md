@@ -4,7 +4,7 @@ description: '유저의 회원가입 , 로그인, 비밀번호 변경, 회원탈
 
 # User
 
-{% api-method method="post" host="{baseUrl}" path="/user/signup" %}
+{% api-method method="post" host="http://54.180.149.177:5000" path="/user/signup" %}
 {% api-method-summary %}
 SignUp
 {% endapi-method-summary %}
@@ -37,16 +37,6 @@ SignUp
 ```
 {% endapi-method-response-example %}
 
-{% api-method-response-example httpCode=404 %}
-{% api-method-response-example-description %}
- 회원가입 실패
-{% endapi-method-response-example-description %}
-
-```
-{ "message": "Failed" }
-```
-{% endapi-method-response-example %}
-
 {% api-method-response-example httpCode=409 %}
 {% api-method-response-example-description %}
  이미 존재하는 이메일을 입력
@@ -60,7 +50,7 @@ SignUp
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="post" host="{baseUrl}" path="/user/signin" %}
+{% api-method method="post" host="http://54.180.149.177:5000" path="/user/signin" %}
 {% api-method-summary %}
 SignIn
 {% endapi-method-summary %}
@@ -95,18 +85,18 @@ SignIn
 
 {% api-method-response-example httpCode=404 %}
 {% api-method-response-example-description %}
- 로그인 실패 
+ 존재하지 않는 유저   
 {% endapi-method-response-example-description %}
 
 ```
-{"message": "Failed"}
+{"message": "unvalid user"}
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="post" host="{baseUrl}" path="/user/newpwd" %}
+{% api-method method="post" host="http://54.180.149.177:5000" path="/user/newpwd" %}
 {% api-method-summary %}
 Change Password
 {% endapi-method-summary %}
@@ -168,7 +158,7 @@ Change Password
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="get" host="{baseUrl}" path="/user/signout" %}
+{% api-method method="get" host="http://54.180.149.177:5000" path="/user/signout" %}
 {% api-method-summary %}
 Signout
 {% endapi-method-summary %}
