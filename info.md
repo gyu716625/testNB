@@ -4,13 +4,13 @@ description: '유저의 email , 아이템에 관한 API 정보를 제공합니�
 
 # Info
 
-{% api-method method="get" host="http://54.180.149.177:5000" path="/info" %}
+{% api-method method="get" host="{baseUrl}" path="/info" %}
 {% api-method-summary %}
 Info
 {% endapi-method-summary %}
 
 {% api-method-description %}
- 이 엔드포인트에서는 User의 email과 Item들에 대한 모든 정보를 담아서 응답합니다.
+ 이 엔드포인트에서는 유저의 email과 옷들에 대한 모든 정보를 담아서 응답합니다.
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -25,7 +25,7 @@ Authentication token to track down who is emptying our stocks.
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
 {% api-method-response-example-description %}
- 데이터 응답 성공   
+Cake successfully retrieved.
 {% endapi-method-response-example-description %}
 
 ```
@@ -35,7 +35,7 @@ Authentication token to track down who is emptying our stocks.
 
 {% api-method-response-example httpCode=404 %}
 {% api-method-response-example-description %}
- 데이터 응답 실패   
+Could not find a cake matching this query.
 {% endapi-method-response-example-description %}
 
 ```
