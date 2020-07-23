@@ -4,7 +4,7 @@ description: '(나중에 수정)유저의 아이템 등록 , 수정, 삭제에 �
 
 # Item
 
-{% api-method method="post" host="{baseUrl}" path="/item" %}
+{% api-method method="post" host="http://54.180.149.177:5000" path="/item" %}
 {% api-method-summary %}
 Add Item
 {% endapi-method-summary %}
@@ -22,6 +22,10 @@ Authentication token to track down who is emptying our stocks.
 {% endapi-method-headers %}
 
 {% api-method-body-parameters %}
+{% api-method-parameter name="weather" type="array" required=true %}
+ex\) weather : \[sp, sm, f, w \]
+{% endapi-method-parameter %}
+
 {% api-method-parameter name="image" type="string" required=true %}
 
 {% endapi-method-parameter %}
@@ -76,7 +80,7 @@ Authentication token to track down who is emptying our stocks.
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="patch" host="{baseUrl}" path="/item/:item\_id" %}
+{% api-method method="patch" host="http://54.180.149.177:5000" path="/item/:item\_id" %}
 {% api-method-summary %}
 Update Item
 {% endapi-method-summary %}
@@ -100,6 +104,10 @@ Update Item
 {% endapi-method-headers %}
 
 {% api-method-body-parameters %}
+{% api-method-parameter name="weather" type="array" required=false %}
+
+{% endapi-method-parameter %}
+
 {% api-method-parameter name="image" type="string" required=false %}
 
 {% endapi-method-parameter %}
@@ -154,7 +162,7 @@ Update Item
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="delete" host="{baseUrl}" path="/item/:item\_id" %}
+{% api-method method="delete" host="http://54.180.149.177:5000" path="/item/:item\_id" %}
 {% api-method-summary %}
 Delete Item
 {% endapi-method-summary %}

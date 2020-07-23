@@ -1,5 +1,5 @@
 ---
-description: 이미지 파일을 url로 변환 시켜주는 어'쩌구
+description: 이미지 파일을 url로 변환 시켜주는 API를 제공합니다.
 ---
 
 # Image
