@@ -4,7 +4,7 @@ description: '유저의 회원가입 , 로그인, 비밀번호 변경, 회원탈
 
 # User
 
-{% api-method method="post" host="http://18.218.160.166:5000" path="/user/signup" %}
+{% api-method method="post" host="http://54.180.149.177:5000" path="/user/signup" %}
 {% api-method-summary %}
 SignUp
 {% endapi-method-summary %}
@@ -50,7 +50,7 @@ SignUp
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="post" host="http://18.218.160.166:5000" path="/user/signin" %}
+{% api-method method="post" host="http://54.180.149.177:5000" path="/user/signin" %}
 {% api-method-summary %}
 SignIn
 {% endapi-method-summary %}
@@ -96,7 +96,7 @@ SignIn
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="post" host="http://18.218.160.166:5000" path="/user/newpwd" %}
+{% api-method method="post" host="http://54.180.149.177:5000" path="/user/newpwd" %}
 {% api-method-summary %}
 Change Password
 {% endapi-method-summary %}
@@ -158,7 +158,7 @@ Change Password
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="get" host="http://18.218.160.166:5000" path="/user/signout" %}
+{% api-method method="get" host="http://54.180.149.177:5000" path="/user/signout" %}
 {% api-method-summary %}
 Signout
 {% endapi-method-summary %}

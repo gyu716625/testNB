@@ -29,17 +29,54 @@ Authentication token to track down who is emptying our stocks.
 {% endapi-method-response-example-description %}
 
 ```
-{}
+{ "data": [
+        {
+            "ItemId": 1,
+            "image": "image_url",
+            "category": "cloth",
+            "type": "pants",
+            "buydate": "2007",
+            "price": 45000,
+            "storage": "행",
+            "sp": 1,
+            "sm": 0,
+            "f": 0,
+            "w": 1
+        },
+        {
+            "ItemId": 2,
+            "image": "image_ur",
+            "category": "cloth",
+            "type": "shirts",
+            "buydate": "2003",
+            "price": 35000,
+            "storage": "서",
+            "sp": 0,
+            "sm": 1,
+            "f": 1,
+            "w": 0
+        }
+    ] }
 ```
 {% endapi-method-response-example %}
 
 {% api-method-response-example httpCode=404 %}
 {% api-method-response-example-description %}
- 데이터 응답 실패   
+ 에러가  발생한 경
 {% endapi-method-response-example-description %}
 
 ```
-{    "message": "Failed" }
+{ "message": err.message }
+```
+{% endapi-method-response-example %}
+
+{% api-method-response-example httpCode=409 %}
+{% api-method-response-example-description %}
+ 유저가  등록한 아이템이 db에 존재하지 않을 경
+{% endapi-method-response-example-description %}
+
+```
+{ "message": "no data" }
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
