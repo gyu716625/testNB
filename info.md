@@ -62,7 +62,7 @@ Authentication token to track down who is emptying our stocks.
 
 {% api-method-response-example httpCode=404 %}
 {% api-method-response-example-description %}
- 에러가  발생한 경
+ 에러가  발생한 경우  
 {% endapi-method-response-example-description %}
 
 ```
@@ -72,7 +72,7 @@ Authentication token to track down who is emptying our stocks.
 
 {% api-method-response-example httpCode=409 %}
 {% api-method-response-example-description %}
- 유저가  등록한 아이템이 db에 존재하지 않을 경
+ 유저가  등록한 아이템이 db에 존재하지 않을 경우  
 {% endapi-method-response-example-description %}
 
 ```
