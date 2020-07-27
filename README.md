@@ -158,13 +158,13 @@ Change Password
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="get" host="http://13.125.237.84:5000" path="/user/signout" %}
+{% api-method method="get" host="http://13.125.237.84:5000" path="/user/delete" %}
 {% api-method-summary %}
-Signout
+delete user
 {% endapi-method-summary %}
 
 {% api-method-description %}
- 로그아웃을 위한 엔드 포인트 입니다.  
+ 회원 탈퇴 위한 엔드 포인트 입니다.
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -179,7 +179,7 @@ Signout
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
 {% api-method-response-example-description %}
- 로그아웃  성공 
+ 회원탈  성공 
 {% endapi-method-response-example-description %}
 
 ```
@@ -189,7 +189,7 @@ Signout
 
 {% api-method-response-example httpCode=404 %}
 {% api-method-response-example-description %}
- 로그아웃 실패  
+ 회원탈 실패  
 {% endapi-method-response-example-description %}
 
 ```
