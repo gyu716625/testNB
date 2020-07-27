@@ -4,7 +4,7 @@ description: 이미지 파일을 url로 변환 시켜주는 API를 제공합니�
 
 # Image
 
-{% api-method method="post" host="http://54.180.149.177:5000" path="/image/upload" %}
+{% api-method method="post" host="http://13.125.237.84:5000" path="/image/upload" %}
 {% api-method-summary %}
 Get Image Url
 {% endapi-method-summary %}
