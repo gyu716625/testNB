@@ -37,6 +37,16 @@ SignUp
 ```
 {% endapi-method-response-example %}
 
+{% api-method-response-example httpCode=404 %}
+{% api-method-response-example-description %}
+ 회원가입 실패    
+{% endapi-method-response-example-description %}
+
+```
+{ "message": "Failed" }
+```
+{% endapi-method-response-example %}
+
 {% api-method-response-example httpCode=409 %}
 {% api-method-response-example-description %}
  이미 존재하는 이메일을 입력
@@ -135,6 +145,16 @@ Change Password
 ```
 {% endapi-method-response-example %}
 
+{% api-method-response-example httpCode=403 %}
+{% api-method-response-example-description %}
+ 토큰정보를 서버에서 확인할 수 없는 경우  
+{% endapi-method-response-example-description %}
+
+```
+{"message": err.message }
+```
+{% endapi-method-response-example %}
+
 {% api-method-response-example httpCode=404 %}
 {% api-method-response-example-description %}
  패스워드 변경 실패  
@@ -179,21 +199,31 @@ delete user
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
 {% api-method-response-example-description %}
- 회원탈  성공 
+ 회원탈퇴 성공 
 {% endapi-method-response-example-description %}
 
 ```
-{"message": "Successful"}
+{ "message": "Successful" } 
+```
+{% endapi-method-response-example %}
+
+{% api-method-response-example httpCode=403 %}
+{% api-method-response-example-description %}
+ 토큰정보를 서버에서 확인할 수 없는 경우 
+{% endapi-method-response-example-description %}
+
+```
+{ "message": err.message }
 ```
 {% endapi-method-response-example %}
 
 {% api-method-response-example httpCode=404 %}
 {% api-method-response-example-description %}
- 회원탈 실패  
+ 회원탈퇴 실패  
 {% endapi-method-response-example-description %}
 
 ```
-{"message": "Failed"}
+{ "message": "Failed" }
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}

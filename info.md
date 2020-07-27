@@ -1,5 +1,5 @@
 ---
-description: '유저의 email , 아이템에 관한 API 정보를 제공합니다.(나중에 수정)'
+description: '유저의 email , 아이템에 관한 API 정보를 제공합니다.'
 ---
 
 # Info
@@ -60,13 +60,23 @@ Authentication token to track down who is emptying our stocks.
 ```
 {% endapi-method-response-example %}
 
-{% api-method-response-example httpCode=404 %}
+{% api-method-response-example httpCode=403 %}
 {% api-method-response-example-description %}
- 에러가  발생한 경우  
+ 토큰정보를 서버에서 확인할 수 없는 경우   
 {% endapi-method-response-example-description %}
 
 ```
 { "message": err.message }
+```
+{% endapi-method-response-example %}
+
+{% api-method-response-example httpCode=404 %}
+{% api-method-response-example-description %}
+ 아이템 등록에 에러가  발생한 경우  
+{% endapi-method-response-example-description %}
+
+```
+{ "message": "Failed" }
 ```
 {% endapi-method-response-example %}
 

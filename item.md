@@ -1,5 +1,5 @@
 ---
-description: '(나중에 수정)유저의 아이템 등록 , 수정, 삭제에 관한 API 정보를 제공합니다.'
+description: '유저의 아이템 등록 , 수정, 삭제에 관한 API 정보를 제공합니다.'
 ---
 
 # Item
@@ -67,13 +67,23 @@ ex\) weather : \[sp, sm, f, w \]
 ```
 {% endapi-method-response-example %}
 
+{% api-method-response-example httpCode=403 %}
+{% api-method-response-example-description %}
+ 토큰정보를 서버에서 확인할 수 없는 경우   
+{% endapi-method-response-example-description %}
+
+```
+{ "message": err.message }
+```
+{% endapi-method-response-example %}
+
 {% api-method-response-example httpCode=404 %}
 {% api-method-response-example-description %}
  아이템 등록 실패      
 {% endapi-method-response-example-description %}
 
 ```
-{    "message": "Failed"}
+{    "message": "Failed"    }
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
@@ -86,7 +96,7 @@ Update Item
 {% endapi-method-summary %}
 
 {% api-method-description %}
- 이 엔드포인트에서는 아이템을 수정합니다.  변경하고자 하는 데이터 정보만...? 
+ 이 엔드포인트에서는 아이템을 수정합니다.  변경하고자 하는 데이터 정보가 필요합니다.  
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -145,7 +155,19 @@ Update Item
 {% endapi-method-response-example-description %}
 
 ```
-{"message": "Successful"}
+{ "message": "Successful update item data with season" }
+or
+{ "message": "Successful update item data" }
+```
+{% endapi-method-response-example %}
+
+{% api-method-response-example httpCode=403 %}
+{% api-method-response-example-description %}
+ 토큰정보를 서버에서 확인할 수 없는 경우  
+{% endapi-method-response-example-description %}
+
+```
+{ "message": err.message }
 ```
 {% endapi-method-response-example %}
 
@@ -194,6 +216,16 @@ Delete Item
 
 ```
 { "message": "Successful" }
+```
+{% endapi-method-response-example %}
+
+{% api-method-response-example httpCode=403 %}
+{% api-method-response-example-description %}
+토큰정보를 서버에서 확인할 수 없는 경우 
+{% endapi-method-response-example-description %}
+
+```
+ { "message": err.message }
 ```
 {% endapi-method-response-example %}
 
