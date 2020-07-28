@@ -22,8 +22,8 @@ Authentication token to track down who is emptying our stocks.
 {% endapi-method-headers %}
 
 {% api-method-body-parameters %}
-{% api-method-parameter name="weather" type="array" required=true %}
-ex\) weather : \[sp, sm, f, w \]
+{% api-method-parameter name="season" type="array" required=true %}
+ex\) season : \[sp, sm, f, w \]
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="image" type="string" required=true %}
@@ -114,7 +114,7 @@ Update Item
 {% endapi-method-headers %}
 
 {% api-method-body-parameters %}
-{% api-method-parameter name="weather" type="array" required=false %}
+{% api-method-parameter name="season" type="array" required=false %}
 
 {% endapi-method-parameter %}
 
