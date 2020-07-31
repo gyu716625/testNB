@@ -178,7 +178,7 @@ Change Password
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="get" host="http://13.125.237.84:5000" path="/user/delete" %}
+{% api-method method="delete" host="http://13.125.237.84:5000" path="/user/delete" %}
 {% api-method-summary %}
 delete user
 {% endapi-method-summary %}
