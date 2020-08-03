@@ -10,7 +10,7 @@ Get Image Url
 {% endapi-method-summary %}
 
 {% api-method-description %}
-This endpoint allows you to get free cakes.
+ 이미지 업로드 시 사용될 url로 변환된 주소를 보내줍니다. 
 {% endapi-method-description %}
 
 {% api-method-spec %}
