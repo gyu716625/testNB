@@ -4,7 +4,7 @@ description: '유저의 email , 아이템에 관한 API 정보를 제공합니�
 
 # Info
 
-{% api-method method="get" host="http://13.125.237.84:5000" path="/info" %}
+{% api-method method="get" host="http://15.165.197.67:5000" path="/info" %}
 {% api-method-summary %}
 Info
 {% endapi-method-summary %}

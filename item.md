@@ -4,7 +4,7 @@ description: '유저의 아이템 등록 , 수정, 삭제에 관한 API 정보�
 
 # Item
 
-{% api-method method="post" host="http://13.125.237.84:5000" path="/item" %}
+{% api-method method="post" host="http://15.165.197.67:5000" path="/item" %}
 {% api-method-summary %}
 Add Item
 {% endapi-method-summary %}
@@ -90,7 +90,7 @@ ex\) season : \[sp, sm, f, w \]
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="patch" host="http://13.125.237.84:5000" path="/item/:item\_id" %}
+{% api-method method="patch" host="http://15.165.197.67:5000" path="/item/:item\_id" %}
 {% api-method-summary %}
 Update Item
 {% endapi-method-summary %}
@@ -184,7 +184,7 @@ or
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="delete" host="http://13.125.237.84:5000" path="/item/:item\_id" %}
+{% api-method method="delete" host="http://15.165.197.67:5000" path="/item/:item\_id" %}
 {% api-method-summary %}
 Delete Item
 {% endapi-method-summary %}
