@@ -106,6 +106,48 @@ SignIn
 {% endapi-method-spec %}
 {% endapi-method %}
 
+{% api-method method="post" host="http://15.165.197.67:5000" path="/user/social/signin" %}
+{% api-method-summary %}
+Google SignIn
+{% endapi-method-summary %}
+
+{% api-method-description %}
+ 구글 로그인용 엔드포인트로 idToken 값을 받습니다. 
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-body-parameters %}
+{% api-method-parameter name="idToken" type="string" required=true %}
+
+{% endapi-method-parameter %}
+{% endapi-method-body-parameters %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+{ "message": "Successful", "email":"gyu23@gmail.com", "id": 1, "token": "user's token value" }
+```
+{% endapi-method-response-example %}
+
+{% api-method-response-example httpCode=404 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+{"message": err.message }
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
 {% api-method method="post" host="http://15.165.197.67:5000" path="/user/newpwd" %}
 {% api-method-summary %}
 Change Password
